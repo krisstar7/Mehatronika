@@ -4024,6 +4024,78 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "RGB LED header"
+		(exclude_from_sim no)
+		(at 33.02 149.86 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "080b219d-45ab-4910-9e16-36352a3bc7b1")
+	)
+	(text "Ambient light sensor"
+		(exclude_from_sim no)
+		(at 130.81 88.138 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "15c8638c-b6b9-4777-ab29-529bc526c4fd")
+	)
+	(text "RGB LED"
+		(exclude_from_sim no)
+		(at 39.624 86.868 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "2719b196-f5f0-4c80-a7e1-dda529cf71cc")
+	)
+	(text "Light sensor header"
+		(exclude_from_sim no)
+		(at 160.02 150.622 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "3fa09075-2f9a-42ff-bba3-81af3a2242a2")
+	)
+	(text "UART header"
+		(exclude_from_sim no)
+		(at 160.02 168.656 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "97f5abf4-2611-4ee2-a78b-c2d5d022ee74")
+	)
+	(text "I2C header"
+		(exclude_from_sim no)
+		(at 33.02 171.45 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "a5a5ca39-bce1-4df6-b30b-46fba42cfc2c")
+	)
 	(junction
 		(at 104.14 31.75)
 		(diameter 0)
@@ -4077,6 +4149,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42b8405b-89c7-40bf-9480-a2e5980aebb8")
+	)
+	(junction
+		(at 71.12 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46844b71-def4-4051-a6e8-6717e01fcca9")
 	)
 	(junction
 		(at 166.37 31.75)
@@ -4137,12 +4215,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b18aaf4d-77b8-4e27-a6a3-52ddfb685bec")
-	)
-	(junction
-		(at 71.12 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b760aae6-638d-4eaf-bd50-3f74d2c5ef61")
 	)
 	(junction
 		(at 67.31 31.75)
@@ -4914,16 +4986,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 168.91) (xy 71.12 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "801f9e66-d0f5-47b5-a6ae-f4c36d7bf0d9")
-	)
-	(wire
-		(pts
 			(xy 88.9 208.28) (xy 88.9 207.01)
 		)
 		(stroke
@@ -4931,6 +4993,16 @@
 			(type default)
 		)
 		(uuid "81301276-6249-4bab-8a0b-c4d1f49f24e2")
+	)
+	(wire
+		(pts
+			(xy 72.39 167.64) (xy 71.12 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8325cea2-f423-4d97-82b6-74033b552d89")
 	)
 	(wire
 		(pts
@@ -5054,6 +5126,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 190.5) (xy 109.22 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9aebcd63-5476-4689-bff6-0b3879cbab81")
+	)
+	(wire
+		(pts
 			(xy 139.7 110.49) (xy 152.4 110.49)
 		)
 		(stroke
@@ -5111,6 +5193,16 @@
 			(type default)
 		)
 		(uuid "aacc2453-c945-4eea-81bb-80c789bc55e3")
+	)
+	(wire
+		(pts
+			(xy 71.12 167.64) (xy 71.12 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aca9a018-3e46-4ab2-baaf-d8ff72d8656a")
 	)
 	(wire
 		(pts
@@ -5501,78 +5593,6 @@
 			(type default)
 		)
 		(uuid "fc9bafdd-5039-4891-ab6f-f38ad62cb7c7")
-	)
-	(label "RGB LED"
-		(at 35.56 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "1f41975a-4234-41f2-9ee2-c6f3c304b034")
-	)
-	(label "Light sensor header"
-		(at 161.29 160.02 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "29988bc7-4e98-45c5-bb76-7ef12921f75d")
-	)
-	(label "I2C header"
-		(at 34.29 175.26 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "618e13b5-0f38-4aa8-be4a-0a6447a422f4")
-	)
-	(label "Ambient light sensor"
-		(at 120.65 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "6fda0f2f-10f5-4a51-a18f-fe75ff87ca77")
-	)
-	(label "RGB LED header"
-		(at 34.29 157.48 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "e3361be1-13b8-431c-8c3d-68a774445ed0")
-	)
-	(label "UART header"
-		(at 161.29 173.99 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "fe87fbe8-4e86-4793-a95c-69996db2a7a3")
 	)
 	(global_label "LX_B"
 		(shape input)
@@ -6325,22 +6345,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 161.29 144.78) (xy 163.83 142.24) (xy 180.34 142.24) (xy 182.88 144.78) (xy 182.88 173.99) (xy 180.34 176.53)
-				(xy 163.83 176.53) (xy 161.29 173.99)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 63c64d20-5ade-4634-82f1-2ebeda8a404d)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 118.11 91.44) (xy 118.11 129.54) (xy 120.65 132.08) (xy 181.61 132.08) (xy 184.15 129.54) (xy 184.15 90.805)
 				(xy 181.61 88.9) (xy 120.65 88.9)
 			)
@@ -6351,7 +6355,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 8ea44333-6cc1-4709-9acb-4056db10261a)
+			(uuid 078e9000-fe5d-4e6d-9cd4-61dc85985029)
 		)
 	)
 	(rule_area
@@ -6367,7 +6371,7 @@
 			(fill
 				(type none)
 			)
-			(uuid b97c3576-f1d3-4a04-931c-59b1d8e764c1)
+			(uuid 150b1755-f3b7-44a9-b149-5752719db8fa)
 		)
 	)
 	(rule_area
@@ -6383,7 +6387,23 @@
 			(fill
 				(type none)
 			)
-			(uuid cf062953-6237-4935-8fed-8c149669aa1c)
+			(uuid 17dc6bd1-66e2-41a0-8cac-1bbb5b9eb419)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 161.29 144.78) (xy 163.83 142.24) (xy 180.34 142.24) (xy 182.88 144.78) (xy 182.88 173.99) (xy 180.34 176.53)
+				(xy 163.83 176.53) (xy 161.29 173.99)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid f72c29a7-8779-415c-8c60-8f69dee6e15f)
 		)
 	)
 	(symbol
@@ -9266,6 +9286,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 72.39 167.64 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7cd4ebdf-4d6b-4469-a208-84619f950fae")
+		(property "Reference" "#PWR010"
+			(at 68.58 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 76.2 167.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 72.39 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "225809db-e90d-44f5-a12f-fa64c5d6d35b")
+		)
+		(instances
+			(project ""
+				(path "/e4725e1f-0f6f-4abc-be2b-77a70f5e1799"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "GEMS_Library:Resistor")
 		(at 167.64 110.49 90)
 		(unit 1)
@@ -10287,6 +10374,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 109.22 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8d8fcf7-ecde-4978-b0e1-a4c3e74e65c7")
+		(property "Reference" "#PWR016"
+			(at 109.22 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 109.22 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 109.22 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b4e92b1-05e2-481b-9dee-92bc166fdf01")
+		)
+		(instances
+			(project ""
+				(path "/e4725e1f-0f6f-4abc-be2b-77a70f5e1799"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "GEMS_Library:Resistor")
 		(at 36.83 102.87 0)
 		(unit 1)
@@ -10684,7 +10837,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "100k"
 			(at 50.8 41.91 0)
 			(effects
 				(font
@@ -10898,73 +11051,6 @@
 			(project ""
 				(path "/e4725e1f-0f6f-4abc-be2b-77a70f5e1799"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 71.12 167.64 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1b35f89-2553-4bbf-b6e1-6cad89c8f010")
-		(property "Reference" "#PWR010"
-			(at 67.31 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 74.93 167.6399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 71.12 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cd35ba49-2fd5-41ac-a969-64fc944a250b")
-		)
-		(instances
-			(project ""
-				(path "/e4725e1f-0f6f-4abc-be2b-77a70f5e1799"
-					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -11746,7 +11832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 175.26 171.4499 90)
 			(effects
 				(font
@@ -11998,72 +12084,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 109.22 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fbde7534-6f6c-4a64-8f56-de68eabbbe99")
-		(property "Reference" "#PWR016"
-			(at 109.22 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 109.22 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 109.22 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c3c700f-dad7-459a-95cf-d57d3411a620")
-		)
-		(instances
-			(project ""
-				(path "/e4725e1f-0f6f-4abc-be2b-77a70f5e1799"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 109.22 199.39 0)
 		(unit 1)
@@ -12148,7 +12168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 48.26 171.4499 90)
 			(effects
 				(font
