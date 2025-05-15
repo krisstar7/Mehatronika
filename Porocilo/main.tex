@@ -1,0 +1,143 @@
+% \documentclass{article}
+\documentclass[12pt,a4paper,oneside,fleqn]{book}
+\usepackage[slovene]{babel}
+% \usepackage[english]{babel}
+
+% \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[left=30mm,
+right=25mm,
+top=30mm,
+bottom=25mm]{geometry}
+
+% \usepackage[backend=biber, style=ieee]{biblatex}
+\usepackage{cite}
+\usepackage[numbib]{tocbibind}
+% \addbibresource{refs.bib}
+
+\usepackage{lipsum}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[nodisplayskipstretch]{setspace}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{codestyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    % numbers=left,   
+    numbers=none,
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\renewcommand{\lstlistingname}{Kod}
+\lstset{style=codestyle}
+
+
+%paragraph settings
+\setlength\parindent{0pt}
+\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+
+% set equation environment indentation
+\setlength{\mathindent}{0.5cm}%
+
+% set itemize environment whitespacing and left margin
+% \setlist[itemize]{noitemsep,nolistsep, leftmargin=*}
+
+% set table and figure captions
+\captionsetup[table]{skip=10pt,singlelinecheck=false}
+\captionsetup[figure]{justification=centering}
+
+% set tablename to Preglednica
+\AtBeginDocument{%
+	\renewcommand\tablename{Preglednica}
+}
+
+% set section and tableofcontents depth
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\def\labelitemi{--}
+
+%  accordingly format a chapter definition
+% \titleformat{\chapter}[display]
+% {\bfseries}{}{0pt}{\Huge\thechapter\quad}
+
+% set fancy_nohead fancy header
+\fancypagestyle{fancy_nohead}{
+	\fancyfoot[RO]{\thepage}
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+	\chead{}
+	\cfoot{}
+}
+
+% assign no_header
+% \assignpagestyle{\chapter}{fancy_nohead}
+
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+
+% \renewcommand\cftchapdotsep{\cftdotsep}  % adds leader dots from chapter titles to page numbers
+
+\usepackage[T1]{fontenc} % Ensures proper font rendering
+\usepackage{lmodern}  
+\usepackage[mmyyyy]{datetime}
+% \newdateformat{mydate}{\shortmonthname[\THEMONTH], \THEYEAR}
+\input{arduinoLanguage}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.3\textwidth]{Imgs/ULFS.png}\par\vspace{1cm}
+	{\huge\bfseries Mehatronika: GEMS Amethyst razvojna plošča\par}
+	\vspace{2cm}
+	{\Large\itshape Kristjan Danov, Jan Černe, Milena Gigova, Marija Gečeva\par}
+    {\Large\itshape Skupina: 2B\par}
+	\vfill
+	% {\large \today\par}
+    {\large Maj 2025\par}
+\end{titlepage}
+
+\pagenumbering{gobble}
+\tableofcontents
+\newpage
+
+\chapter{Uvod}
+    \input{Text/uvod}
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\chapter{Opis razvojne plošče}
+    \input{Text/opis}
+
+\chapter{Delovanje razvojne plošče}
+    \input{Text/delovanje}
+
+\end{document}
+
+\end{document}
